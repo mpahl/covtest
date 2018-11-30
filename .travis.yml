@@ -4,7 +4,7 @@ python:
 install:
   - 'pip install pipenv'
 #   - 'pipenv install --dev'
-  - 'pipenv sync'
+  - 'pipenv install -d --system'
   - 'django-admin --version'
   - 'pytest --version'
   - 'pip install coverage'
