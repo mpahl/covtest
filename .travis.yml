@@ -4,9 +4,9 @@ python:
 install:
   - 'pip install pipenv'
   - 'pipenv install --dev'
-  - 'django-admin --version'
-  - 'pytest --version'
-# script:
+  - 'pip install coverage'
+script:
+  - 'coverage run tests.py'
 #   - 'pipenv run py.test tests'
 after_success:
     - 'bash <(curl -s https://codecov.io/bash)'
