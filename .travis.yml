@@ -3,7 +3,9 @@ python:
   - '3.6'
 install:
   - 'pip install pipenv'
-  - 'pipenv sync'
+  - 'pipenv install --dev'
+  - 'django-admin --version'
+  - 'pytest --version'
 # script:
 #   - 'pipenv run py.test tests'
 after_success:
